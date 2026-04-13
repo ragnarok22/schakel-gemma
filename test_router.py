@@ -100,22 +100,24 @@ def run_inference(model: PeftModel, tokenizer: AutoTokenizer, user_input: str) -
         {"role": "user", "content": user_input},
     ]
 
-    input_ids = tokenizer.apply_chat_template(
+    inputs = tokenizer.apply_chat_template(
         messages,
         tokenize=True,
         add_generation_prompt=True,
         return_tensors="pt",
+        return_dict=True,
     ).to(model.device)
 
     with torch.no_grad():
         output_ids = model.generate(
-            input_ids,
+            **inputs,
             max_new_tokens=64,
             do_sample=False,
         )
 
     # Decode only the newly generated tokens.
-    new_tokens = output_ids[0, input_ids.shape[1] :]
+    prompt_len = inputs["input_ids"].shape[1]
+    new_tokens = output_ids[0, prompt_len:]
     return tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
 
 
