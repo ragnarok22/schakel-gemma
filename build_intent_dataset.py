@@ -431,16 +431,15 @@ def main():
         print(f"{ratio:.2f} | {label_i} | {text_i} || {label_j} | {text_j}")
 
     root = Path(__file__).resolve().parent
+    data_dir = root / "data"
+    data_dir.mkdir(exist_ok=True)
     for split in ("train", "valid"):
         lines = [
             json.dumps(record, ensure_ascii=False, separators=(",", ":"))
             for current_split, _, _, record in records
             if current_split == split
         ]
-        (root / f"{split}.jsonl").write_text("\n".join(lines) + "\n", encoding="utf-8")
-        datasets_dir = root / "datasets"
-        datasets_dir.mkdir(exist_ok=True)
-        (datasets_dir / f"{split}.jsonl").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        (data_dir / f"{split}.jsonl").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
