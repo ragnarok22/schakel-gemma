@@ -1,8 +1,9 @@
 import torch
-from datasets import load_dataset
 from peft import LoraConfig
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from trl import SFTConfig, SFTTrainer
+
+from datasets import load_dataset
 
 model_id = "google/gemma-4-E2B-it"
 
@@ -17,7 +18,8 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 dataset = load_dataset(
-    "json", data_files={"train": "train.jsonl", "validation": "valid.jsonl"}
+    "json",
+    data_files={"train": "datasets/train.jsonl", "validation": "datasets/valid.jsonl"},
 )
 
 peft_config = LoraConfig(
