@@ -134,7 +134,7 @@ def build_model(
             bnb_4bit_compute_dtype=torch.bfloat16,
         )
     else:
-        load_kwargs["torch_dtype"] = torch.bfloat16
+        load_kwargs["dtype"] = torch.bfloat16
 
     model = AutoModelForCausalLM.from_pretrained(model_id, **load_kwargs)
     return model, tokenizer
