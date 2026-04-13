@@ -1,10 +1,18 @@
 [project]
 name = "schakel-gemma"
 version = "0.1.0"
-description = "Add your description here"
+description = "QLoRA fine-tuning for Gemma as a Spanish intent router"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.4",
+    "transformers>=4.51",
+    "datasets>=3.0",
+    "peft>=0.14",
+    "trl>=0.15",
+    "bitsandbytes>=0.45",
+    "accelerate>=1.2",
+]
 
 [dependency-groups]
 dev = [

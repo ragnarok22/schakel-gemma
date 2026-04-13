@@ -124,7 +124,7 @@ def parse_intent(raw: str) -> str | None:
     try:
         data = json.loads(raw)
         return data.get("intent")
-    except json.JSONDecodeError, TypeError:
+    except (json.JSONDecodeError, TypeError):
         return None
 
 
