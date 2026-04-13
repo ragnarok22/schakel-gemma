@@ -33,7 +33,9 @@ DOMOTICA = [
     item("abre el portón"),
     item("enciende el enchufe de la cafetera"),
     item("apaga el enchufe del televisor"),
-    item("cómo está la temperatura del cuarto del bebé ahora mismo para saber si lo tapo"),
+    item(
+        "cómo está la temperatura del cuarto del bebé ahora mismo para saber si lo tapo"
+    ),
     item("dime si la puerta principal está cerrada"),
     item("pasa la aspiradora en la cocina"),
     item("manda el robot al comedor"),
@@ -55,12 +57,20 @@ DOMOTICA = [
     item("activa modo fuera de casa"),
     item("desarma la alarma de la entrada antes de abrir la puerta porque ya llegué"),
     item("está abierta la ventana del balcón"),
-    item("quiero la sala más fresca sin apagar el ventilador porque todavía hace calor", amb=True),
+    item(
+        "quiero la sala más fresca sin apagar el ventilador porque todavía hace calor",
+        amb=True,
+    ),
     item("deja el dormitorio a oscuras pero con luz tenue para no despertar al niño"),
     item("enciende la luz del baño pequeño junto a la cocina que voy medio dormido"),
-    item("cuando me vaya apaga todo lo que quede prendido para no gastar de más", amb=True),
+    item(
+        "cuando me vaya apaga todo lo que quede prendido para no gastar de más",
+        amb=True,
+    ),
     item("pon las luces del comedor en cálido al treinta por ciento para la cena"),
-    item("sube un poco más la intensidad de la lámpara del escritorio que sigo leyendo"),
+    item(
+        "sube un poco más la intensidad de la lámpara del escritorio que sigo leyendo"
+    ),
     item("bajame la perziana del living", noise=True),
     item("subi la del fondo", noise=True, amb=True),
     item("prendé las luces de afuera"),
@@ -80,8 +90,12 @@ DOMOTICA = [
     item("robot a la cosina", noise=True),
     item("limpia abajo de la mesa del comedor y después vuelve a cargarse solo"),
     item("enciende la luz del pasillo de arriba porque no veo nada al subir"),
-    item("baja todas las persianas del frente menos la del despacho de arriba que estoy usando"),
-    item("prende las luces del jardín y avísame si se detecta movimiento afuera durante la noche"),
+    item(
+        "baja todas las persianas del frente menos la del despacho de arriba que estoy usando"
+    ),
+    item(
+        "prende las luces del jardín y avísame si se detecta movimiento afuera durante la noche"
+    ),
     item("deja el aire en modo seco porque hay mucha humedad en la habitación"),
     item("apaga lo del cuarto", amb=True),
     item("prende lo de afuera", amb=True),
@@ -94,19 +108,28 @@ DOMOTICA = [
     item("un poco más de luz", amb=True),
     item("menos brillo", amb=True),
     item("revisa si ay alguien en la puerta", noise=True),
-    item("desbloquea la cerradura de la entrada para que pase mi hermano que llegó temprano"),
-    item("bloquea la puerta principal y confirma si quedó bien cerrada porque me voy a dormir"),
+    item(
+        "desbloquea la cerradura de la entrada para que pase mi hermano que llegó temprano"
+    ),
+    item(
+        "bloquea la puerta principal y confirma si quedó bien cerrada porque me voy a dormir"
+    ),
     item("enciende el humidificador"),
     item("apaga el purificador"),
     item("pon el ventilador en velocidad dos"),
     item("enciende solo la luz sobre la mesa"),
     item("apaga la lámpara del buró"),
     item("abre las persianas del salón y la cocina pero deja cerrado el dormitorio"),
-    item("quiero la casa lista para dormir con todo apagado salvo el pasillo y el baño", amb=True),
+    item(
+        "quiero la casa lista para dormir con todo apagado salvo el pasillo y el baño",
+        amb=True,
+    ),
     item("activa la rutina buenos días", amb=True),
     item("desactiva la rutina vacaciones", amb=True),
     item("ay fuga de agua en la labandería", noise=True),
-    item("qué marca el sensor de humo de la cocina ahora mismo que siento un olor raro"),
+    item(
+        "qué marca el sensor de humo de la cocina ahora mismo que siento un olor raro"
+    ),
     item("apaga el aire del cuarto de invitados y prende el ventilador de techo"),
     item("deja la sala en veinte grados y las luces tenues para ver una peli"),
     item("kita el aviso del detector", noise=True),
@@ -151,14 +174,28 @@ MUSICA = [
     item("canción romántica", amb=True),
     item("himno de la champions"),
     item("una de Serrat", amb=True),
-    item("ponme boleros viejitos para cenar tranquilos sin tanta tristeza ni canciones de ruptura"),
-    item("reproduce la lista domingo tranquilo que tengo guardada en Spotify desde el principio"),
-    item("abre Spotify y pon mi descubrimiento semanal en el altavoz del salón a volumen medio"),
-    item("quiero escuchar el último disco de Karol G completo desde el principio sin mezclar nada"),
-    item("pon música para limpiar la casa a buen volumen pero no reguetón ni letras explícitas"),
+    item(
+        "ponme boleros viejitos para cenar tranquilos sin tanta tristeza ni canciones de ruptura"
+    ),
+    item(
+        "reproduce la lista domingo tranquilo que tengo guardada en Spotify desde el principio"
+    ),
+    item(
+        "abre Spotify y pon mi descubrimiento semanal en el altavoz del salón a volumen medio"
+    ),
+    item(
+        "quiero escuchar el último disco de Karol G completo desde el principio sin mezclar nada"
+    ),
+    item(
+        "pon música para limpiar la casa a buen volumen pero no reguetón ni letras explícitas"
+    ),
     item("sáltate esta y busca otra parecida"),
-    item("busca versiones acústicas de Juan Luis Guerra para esta tarde mientras cocino en paz"),
-    item("pon algo parecido a lo que suena ahora pero más suave y menos triste", amb=True),
+    item(
+        "busca versiones acústicas de Juan Luis Guerra para esta tarde mientras cocino en paz"
+    ),
+    item(
+        "pon algo parecido a lo que suena ahora pero más suave y menos triste", amb=True
+    ),
     item("bájale un poco porque el bebé está dormido", amb=True),
     item("pon solo artistas mujeres", amb=True),
     item("pone cuarteto cordobés"),
@@ -180,14 +217,25 @@ MUSICA = [
     item("pon reggeton viejito", noise=True),
     item("buska una playlist de focus", noise=True),
     item("reproduci el albun de Cerati", noise=True),
-    item("pon una lista para cenar con amigos que no sea muy intensa ni triste y dure bastante"),
-    item("quiero música instrumental para leer sin letra ni sobresaltos esta noche mientras termino trabajo"),
-    item("sigue con algo parecido pero un poco más alegre que esto sin cambiar de estilo", amb=True),
-    item("pon salsa de los noventa y luego algo de bachata suave para seguir bailando aquí"),
+    item(
+        "pon una lista para cenar con amigos que no sea muy intensa ni triste y dure bastante"
+    ),
+    item(
+        "quiero música instrumental para leer sin letra ni sobresaltos esta noche mientras termino trabajo"
+    ),
+    item(
+        "sigue con algo parecido pero un poco más alegre que esto sin cambiar de estilo",
+        amb=True,
+    ),
+    item(
+        "pon salsa de los noventa y luego algo de bachata suave para seguir bailando aquí"
+    ),
     item("ponme el tema que dice despacito pero no el remix ni la versión en vivo"),
     item("no esa no, la versión en vivo que suena más limpia y no la del estudio"),
     item("mezcla flamenco con pop español a ver qué sale hoy para animar la tarde"),
-    item("deja sonando música hasta que me duerma y luego bájala sola para no despertarme"),
+    item(
+        "deja sonando música hasta que me duerma y luego bájala sola para no despertarme"
+    ),
     item("pon algo para el asado", amb=True),
     item("algo para estudiar", amb=True),
     item("el volumen nomás", amb=True),
@@ -200,8 +248,12 @@ MUSICA = [
     item("añade esta canción a mi playlist de carretera"),
     item("pon el top 50 España y luego el top 50 México"),
     item("arranca Spotify en el altavoz de la cocina y sube un poco"),
-    item("reproduce en todos los parlantes menos en el cuarto del bebé que ya se durmió"),
-    item("quita el modo aleatorio y sigue el álbum desde la tercera canción sin saltarte nada"),
+    item(
+        "reproduce en todos los parlantes menos en el cuarto del bebé que ya se durmió"
+    ),
+    item(
+        "quita el modo aleatorio y sigue el álbum desde la tercera canción sin saltarte nada"
+    ),
     item("quiero escuchar yaneras", noise=True),
     item("dame marachi", noise=True),
     item("pon trap argentino"),
@@ -216,10 +268,18 @@ MUSICA = [
     item("una de LuisMi", amb=True),
     item("pon canto gregoriano"),
     item("para la rola"),
-    item("quiero un tema de despecho para cantar en la cocina mientras termino de ordenar"),
-    item("pon electrónica suave que no tenga drops bruscos porque estoy trabajando desde casa"),
-    item("arranca con una versión en directo de Sabina y luego sigue parecido sin irte al rock"),
-    item("busca una playlist de reggaetón viejo para la fiesta del sábado que tenga clásicos"),
+    item(
+        "quiero un tema de despecho para cantar en la cocina mientras termino de ordenar"
+    ),
+    item(
+        "pon electrónica suave que no tenga drops bruscos porque estoy trabajando desde casa"
+    ),
+    item(
+        "arranca con una versión en directo de Sabina y luego sigue parecido sin irte al rock"
+    ),
+    item(
+        "busca una playlist de reggaetón viejo para la fiesta del sábado que tenga clásicos"
+    ),
 ]
 
 
@@ -245,7 +305,9 @@ GENERAL = [
     item("dime una noticia de tecnología"),
     item("abre YouTube", amb=True),
     item("qué día cae el feriado"),
-    item("agenda una alarma para las seis de la mañana porque mañana tengo cita temprano"),
+    item(
+        "agenda una alarma para las seis de la mañana porque mañana tengo cita temprano"
+    ),
     item("pon un temporizador de diez minutos"),
     item("llama a Ana"),
     item("manda un mensaje a Carlos que llego tarde"),
@@ -263,16 +325,32 @@ GENERAL = [
     item("me escuchas", amb=True),
     item("estás ahí", amb=True),
     item("necesito ideas para cenar rápido con lo que tengo en la nevera y sin salir"),
-    item("recomiéndame una serie para ver esta noche que no sea muy larga ni muy densa"),
-    item("si salgo ahora necesito paraguas o mejor me llevo chaqueta por si refresca luego"),
-    item("cuánto tardaría en llegar al aeropuerto un viernes por la tarde saliendo desde casa"),
-    item("explícame por qué el cielo cambia de color al atardecer como si fuera un niño"),
-    item("acuérdame sacar la basura mañana después del desayuno sin falta porque siempre se me pasa"),
-    item("dame tres opciones de desayuno con huevo y aguacate para mañana que no tarden mucho"),
-    item("cuéntame algo interesante de Surinam que no sepa casi nadie y sea fácil de recordar"),
+    item(
+        "recomiéndame una serie para ver esta noche que no sea muy larga ni muy densa"
+    ),
+    item(
+        "si salgo ahora necesito paraguas o mejor me llevo chaqueta por si refresca luego"
+    ),
+    item(
+        "cuánto tardaría en llegar al aeropuerto un viernes por la tarde saliendo desde casa"
+    ),
+    item(
+        "explícame por qué el cielo cambia de color al atardecer como si fuera un niño"
+    ),
+    item(
+        "acuérdame sacar la basura mañana después del desayuno sin falta porque siempre se me pasa"
+    ),
+    item(
+        "dame tres opciones de desayuno con huevo y aguacate para mañana que no tarden mucho"
+    ),
+    item(
+        "cuéntame algo interesante de Surinam que no sepa casi nadie y sea fácil de recordar"
+    ),
     item("cómo va el dólar hoy y si subió respecto a ayer en mi país"),
     item("cuánta batería le queda al móvil"),
-    item("busca dónde queda la farmacia de guardia más cercana abierta ahora y cómo llego"),
+    item(
+        "busca dónde queda la farmacia de guardia más cercana abierta ahora y cómo llego"
+    ),
     item("ke ora es", noise=True),
     item("cuanto e 19 por 8", noise=True),
     item("va a yobé mañana", noise=True),
@@ -295,14 +373,26 @@ GENERAL = [
     item("me ayudas", amb=True),
     item("dime algo", amb=True),
     item("qué pasó hoy en el país y si afecta algo para mañana en el trabajo"),
-    item("estaba pensando si mañana hará calor porque tengo que salir temprano con los niños"),
-    item("necesito que me expliques como si tuviera diez años qué es la inflación en pocas palabras"),
+    item(
+        "estaba pensando si mañana hará calor porque tengo que salir temprano con los niños"
+    ),
+    item(
+        "necesito que me expliques como si tuviera diez años qué es la inflación en pocas palabras"
+    ),
     item("si pongo arroz ahora, cuánto tiempo debería dejarlo para que no se pase"),
-    item("recuérdame dentro de media hora revisar el horno porque siempre se me olvida"),
-    item("cuál es la diferencia entre un asteroide, un meteoro y un meteorito en pocas palabras"),
-    item("hoy me siento raro, qué puedo hacer para relajarme un poco sin salir de casa"),
+    item(
+        "recuérdame dentro de media hora revisar el horno porque siempre se me olvida"
+    ),
+    item(
+        "cuál es la diferencia entre un asteroide, un meteoro y un meteorito en pocas palabras"
+    ),
+    item(
+        "hoy me siento raro, qué puedo hacer para relajarme un poco sin salir de casa"
+    ),
     item("si viajo a Madrid el mes que viene, qué ropa me conviene llevar"),
-    item("oye tengo sueño pero todavía me falta trabajar, algún consejo para aguantar un rato"),
+    item(
+        "oye tengo sueño pero todavía me falta trabajar, algún consejo para aguantar un rato"
+    ),
     item("pon una alarma", amb=True),
     item("sube las noticias", amb=True),
     item("baja la voz", amb=True),
@@ -319,9 +409,13 @@ GENERAL = [
     item("no me akuerdo de la capital de peru", noise=True),
     item("pon un recordatorio pa mañana", noise=True),
     item("cual es el pronostiko del finde", noise=True),
-    item("quiero saber si mañana necesito abrigo para salir con los niños temprano al cole"),
+    item(
+        "quiero saber si mañana necesito abrigo para salir con los niños temprano al cole"
+    ),
     item("explícame por qué el pan se pone duro cuando lo dejo afuera toda la noche"),
-    item("si tengo que hacer una tortilla para seis personas, cuántos huevos uso más o menos"),
+    item(
+        "si tengo que hacer una tortilla para seis personas, cuántos huevos uso más o menos"
+    ),
     item("cuál fue la última peli de Pixar"),
     item("qué significa cpu"),
 ]
@@ -336,7 +430,9 @@ ALL_SETS = {
 
 def strip_accents(text):
     return "".join(
-        char for char in unicodedata.normalize("NFKD", text) if not unicodedata.combining(char)
+        char
+        for char in unicodedata.normalize("NFKD", text)
+        if not unicodedata.combining(char)
     )
 
 
@@ -359,7 +455,9 @@ def build_records():
     for label, rows in ALL_SETS.items():
         for row in rows:
             key = normalize_text(row["text"])
-            assert key not in seen, f"Exact normalized duplicate: {row['text']} == {seen[key]}"
+            assert key not in seen, (
+                f"Exact normalized duplicate: {row['text']} == {seen[key]}"
+            )
             seen[key] = row["text"]
 
     records = []
@@ -422,7 +520,9 @@ def main():
         json.dumps(
             {
                 "totals": totals,
-                "splits": {split: dict(counts) for split, counts in split_counts.items()},
+                "splits": {
+                    split: dict(counts) for split, counts in split_counts.items()
+                },
                 "noise": noise_count,
                 "ambiguous": amb_count,
                 "short_1_3": short_count,
@@ -447,7 +547,9 @@ def main():
             for current_split, _, _, record in records
             if current_split == split
         ]
-        (data_dir / f"{split}.jsonl").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        (data_dir / f"{split}.jsonl").write_text(
+            "\n".join(lines) + "\n", encoding="utf-8"
+        )
 
 
 if __name__ == "__main__":
