@@ -8,3 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Model outputs and checkpoints
+router-lora/
+router-lora-final/
+*.safetensors
+*.bin
+*.gguf
