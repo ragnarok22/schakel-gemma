@@ -1,0 +1,5 @@
+{"messages":[
+  {"role":"system","content":"Clasifica la intención del usuario. Responde solo JSON válido con una clave intent y un valor entre DOMOTICA, MUSICA o GENERAL."},
+  {"role":"user","content":"pon jazz relajante"},
+  {"role":"assistant","content":"{\"intent\":\"MUSICA\"}"}
+]}
