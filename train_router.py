@@ -164,22 +164,17 @@ def main() -> None:
     model, tokenizer = build_model(args.model_id, args.qlora)
 
     # ---- LoRA ----
-    # Target both attention and MLP projections for better classification.
+    # Gemma 4 is a multimodal model: vision/audio towers use
+    # Gemma4ClippableLinear (unsupported by PEFT), while the text decoder
+    # uses standard nn.Linear.  Restrict LoRA to the language-model layers
+    # via a regex so PEFT never touches the vision/audio encoders.
     peft_config = LoraConfig(
         r=args.lora_r,
         lora_alpha=args.lora_alpha,
         lora_dropout=0.05,
         bias="none",
         task_type="CAUSAL_LM",
-        target_modules=[
-            "q_proj",
-            "k_proj",
-            "v_proj",
-            "o_proj",
-            "gate_proj",
-            "up_proj",
-            "down_proj",
-        ],
+        target_modules=r"language_model\.layers\.\d+\.(self_attn\.(q_proj|k_proj|v_proj|o_proj)|mlp\.(gate_proj|up_proj|down_proj))",
     )
 
     # ---- training config ----
