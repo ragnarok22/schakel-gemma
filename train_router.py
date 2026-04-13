@@ -40,7 +40,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--gradient-accumulation-steps", type=int, default=4)
     p.add_argument("--lr", type=float, default=2e-4, help="Learning rate")
     p.add_argument(
-        "--max-seq-length",
+        "--max-length",
         type=int,
         default=256,
         help="Max sequence length (keep small for intent routing)",
@@ -196,7 +196,7 @@ def main() -> None:
         eval_steps=args.eval_steps if eval_strategy != "no" else None,
         save_steps=args.save_steps,
         bf16=True,
-        max_seq_length=args.max_seq_length,
+        max_length=args.max_length,
         report_to="none",
     )
 
